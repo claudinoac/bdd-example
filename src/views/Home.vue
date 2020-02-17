@@ -9,9 +9,9 @@
 import PeopleForm from '@/components/PeopleForm.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    PeopleForm,
-  },
+    name: 'Home',
+    components: {
+        PeopleForm,
+    },
 };
 </script>
