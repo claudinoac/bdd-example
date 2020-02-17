@@ -1,0 +1,28 @@
+name: Integration tests
+
+on:
+  push:
+    branches: 
+      - master
+      - dev
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+    - name: Set up node and npm
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install dependencies
+      run: |
+        npm install --dev
+    - name: Run Tests
+      run: |
+        npm run test:e2e:headless
