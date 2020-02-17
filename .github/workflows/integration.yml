@@ -16,8 +16,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
-    - name: Set up node and npm
     - uses: actions/setup-node@v1
+    - name: Set up node and npm
       with:
         node-version: '10.x'
     - name: Install dependencies
