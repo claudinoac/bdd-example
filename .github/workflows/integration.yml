@@ -27,7 +27,7 @@ jobs:
         npm run build
     - name: Run http server with bundle
       run: |
-        npm run up-bundle
+        npm run up-bundle &
     - name: Run tests on bundle
       run: |
         npm run test:e2e:headless

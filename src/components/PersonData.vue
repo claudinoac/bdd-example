@@ -14,8 +14,8 @@
 
 <script>
 export default {
-  name: 'PersonCard',
-  props: ['name', 'age', 'email'],
+    name: 'PersonCard',
+    props: ['name', 'age', 'email'],
 };
 </script>
 

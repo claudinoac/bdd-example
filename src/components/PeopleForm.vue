@@ -17,21 +17,21 @@
 
 <script>
 export default {
-  name: 'PeopleForm',
-  data: () => ({
-    name: null,
-    age: null,
-    email: null,
-  }),
-  methods: {
-    validate() {
-      this.$emit('addPerson', {
-        name: this.name,
-        age: this.age,
-        email: this.email,
-      });
+    name: 'PeopleForm',
+    data: () => ({
+        name: null,
+        age: null,
+        email: null,
+    }),
+    methods: {
+        validate() {
+            this.$emit('addPerson', {
+                name: this.name,
+                age: this.age,
+                email: this.email,
+            });
+        },
     },
-  },
 };
 </script>
 

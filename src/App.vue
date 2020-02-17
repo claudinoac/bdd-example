@@ -22,20 +22,20 @@ import PeopleForm from './components/PeopleForm.vue';
 import PersonCard from './components/PersonData.vue';
 
 export default {
-  name: 'App',
+    name: 'App',
 
-  components: {
-    PeopleForm,
-    PersonCard,
-  },
-
-  data: () => ({
-    people: [],
-  }),
-  methods: {
-    addPerson(data) {
-      this.people.push(data);
+    components: {
+        PeopleForm,
+        PersonCard,
     },
-  },
+
+    data: () => ({
+        people: [],
+    }),
+    methods: {
+        addPerson(data) {
+            this.people.push(data);
+        },
+    },
 };
 </script>
