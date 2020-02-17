@@ -24,7 +24,7 @@ jobs:
         npm install --dev
     - name: Build bundle
       run: |
-        npm run build
+        npm run build:dev
     - name: Run http server with bundle
       run: |
         npm run up-bundle &

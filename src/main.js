@@ -5,6 +5,8 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
+console.log(process.env.NODE_ENV);
+
 new Vue({
     router,
     vuetify,
