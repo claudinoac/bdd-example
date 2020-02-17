@@ -9,7 +9,7 @@ Feature: People register
         Then a card with name "<name>", age "<age>", email "<email>" should appear
 
         Examples:
-        | name           |  age  |  email             |
-        | xuxa meneghel  |  12   | xuxa@meneghell.com |
-        | sasha meneghel |  19   | sasha@park.com     |
+        |   name        |  age  |       email        |
+        | ione lao      |  12   | ione@lao.com       |
+        | xuxa meneghel |  60   | xuxa@meneghell.com |
 
