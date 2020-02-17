@@ -18,7 +18,7 @@ When('I click in the submit button', async (t) => {
 Then(/^a card with name "(.+)", age "(.+)", email "(.+)" should appear$/, async (t, [name, age, email]) => {
     await t.expect(
         Selector('.person-card .v-card__title').textContent,
-    ).contains(name);
+    ).eql(name);
     await t.expect(
         Selector('.person-card .age').textContent,
     ).contains(age);
