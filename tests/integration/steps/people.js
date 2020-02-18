@@ -5,6 +5,13 @@ Given('I\'ve accessed the people register view', async (t) => {
     await t.navigateTo('http://localhost:8080/');
 });
 
+Given(/^it has the fields "(.+)", "(.+)" and "(.+)"$/, async (t, fields) => {
+    await fields.forEach(async (field) => {
+        await t.expect(Selector(`.form-card .field-${field} input`).exists).ok();
+        // await t.expect(false).ok(); //will fail this step
+    });
+});
+
 When(/^I fill the fields with name "(.+)", age "(.+)", email "(.+)"$/, async (t, [name, age, email]) => {
     await t.typeText('.form-card .field-name input', name);
     await t.typeText('.form-card .field-age input', age);
